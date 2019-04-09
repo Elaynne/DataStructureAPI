@@ -1,0 +1,17 @@
+C:\Users\Elaynne\source\repos\SortAPI\SortAPI\bin\Debug\netcoreapp2.1\SortAPI.deps.json
+C:\Users\Elaynne\source\repos\SortAPI\SortAPI\bin\Debug\netcoreapp2.1\SortAPI.runtimeconfig.json
+C:\Users\Elaynne\source\repos\SortAPI\SortAPI\bin\Debug\netcoreapp2.1\SortAPI.runtimeconfig.dev.json
+C:\Users\Elaynne\source\repos\SortAPI\SortAPI\bin\Debug\netcoreapp2.1\SortAPI.dll
+C:\Users\Elaynne\source\repos\SortAPI\SortAPI\bin\Debug\netcoreapp2.1\SortAPI.pdb
+C:\Users\Elaynne\source\repos\SortAPI\SortAPI\obj\Debug\netcoreapp2.1\SortAPI.csprojAssemblyReference.cache
+C:\Users\Elaynne\source\repos\SortAPI\SortAPI\obj\Debug\netcoreapp2.1\SortAPI.csproj.CoreCompileInputs.cache
+C:\Users\Elaynne\source\repos\SortAPI\SortAPI\obj\Debug\netcoreapp2.1\SortAPI.RazorAssemblyInfo.cache
+C:\Users\Elaynne\source\repos\SortAPI\SortAPI\obj\Debug\netcoreapp2.1\SortAPI.RazorAssemblyInfo.cs
+C:\Users\Elaynne\source\repos\SortAPI\SortAPI\obj\Debug\netcoreapp2.1\SortAPI.AssemblyInfoInputs.cache
+C:\Users\Elaynne\source\repos\SortAPI\SortAPI\obj\Debug\netcoreapp2.1\SortAPI.AssemblyInfo.cs
+C:\Users\Elaynne\source\repos\SortAPI\SortAPI\obj\Debug\netcoreapp2.1\SortAPI.RazorTargetAssemblyInfo.cache
+C:\Users\Elaynne\source\repos\SortAPI\SortAPI\obj\Debug\netcoreapp2.1\SortAPI.dll
+C:\Users\Elaynne\source\repos\SortAPI\SortAPI\obj\Debug\netcoreapp2.1\SortAPI.pdb
+C:\Users\Elaynne\source\repos\SortAPI\SortAPI\bin\Debug\netcoreapp2.1\SortLib.dll
+C:\Users\Elaynne\source\repos\SortAPI\SortAPI\bin\Debug\netcoreapp2.1\SortLib.pdb
+C:\Users\Elaynne\source\repos\SortAPI\SortAPI\obj\Debug\netcoreapp2.1\SortAPI.csproj.CopyComplete
