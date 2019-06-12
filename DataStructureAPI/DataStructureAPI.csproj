@@ -9,7 +9,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="JSON" Version="1.0.1" />
     <PackageReference Include="Microsoft.AspNetCore.App" />
     <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.1.2" PrivateAssets="All" />
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.1.1" />
@@ -18,7 +17,7 @@
 
   <ItemGroup>
     <Reference Include="SortLib">
-      <HintPath>..\..\SortLib\DataStructureLib\SortLib\bin\Release\netcoreapp2.1\SortLib.dll</HintPath>
+      <HintPath>..\..\SortLib\DataStructureLib\SortLib\bin\Debug\netcoreapp2.1\SortLib.dll</HintPath>
     </Reference>
   </ItemGroup>
 
