@@ -1,7 +1,7 @@
 # DataStructureAPI
 Learning .net core API
 
-This API uses the SortLib.dll from DataStructurelib project https://github.com/Elaynne/DataStructureLib wich contains search, ordering  and collections algorithms.
+This API uses the SortLib.dll from [DataStructurelib](https://github.com/Elaynne/DataStructureLib) project wich contains search, ordering  and collections algorithms.
 
 ## TO-DO
 
