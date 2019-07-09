@@ -16,14 +16,16 @@ This API uses the SortLib.dll from [DataStructurelib](https://github.com/Elaynne
 * Json input request exemple for rout [/api/sort]:
 * Algorithm options: "mergesort", "heapsrot", "quicksort" and "all".
 
-```json{
+```json
+{
 	"Algorithm": "mergesort",
 	"Itens":
 		["15", "18", "16", "14","63", "12", "62", "58","66", "26", "6", "65","46", "11", "7"]
 }
 ````
 * Your output should be:
-```json[
+```json
+[
    {
       "Time":"00:00:00.0096113",
       "Complexity":"n log(n)",
@@ -32,4 +34,4 @@ This API uses the SortLib.dll from [DataStructurelib](https://github.com/Elaynne
       ],
       "Algorithm":"mergesort"
    }
-]```
+]````
