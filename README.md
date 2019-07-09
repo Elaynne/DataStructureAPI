@@ -11,8 +11,9 @@ This API uses the SortLib.dll from [DataStructurelib](https://github.com/Elaynne
 * [ ] Accept text file as input
 * [ ] Allow download of ordered file
 
-#Json input request exemple for rout [/api/sort]:
-Algorithm options: "mergesort", "heapsrot", "quicksort" and "all".
+## Request exemple
+* Json input request exemple for rout [/api/sort]:
+* Algorithm options: "mergesort", "heapsrot", "quicksort" and "all".
 
 {
 	"Algorithm": "mergesort",
@@ -20,8 +21,8 @@ Algorithm options: "mergesort", "heapsrot", "quicksort" and "all".
 		["15", "18", "16", "14","63", "12", "62", "58","66", "26", "6", "65","46", "11", "7"]
 }
 
-Your output should be:
-[
+* Your output should be:
+```json[
    {
       "Time":"00:00:00.0096113",
       "Complexity":"n log(n)",
@@ -30,4 +31,4 @@ Your output should be:
       ],
       "Algorithm":"mergesort"
    }
-]
+]```
