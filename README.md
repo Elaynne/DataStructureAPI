@@ -12,15 +12,16 @@ This API uses the SortLib.dll from [DataStructurelib](https://github.com/Elaynne
 * [ ] Allow download of ordered file
 
 ## Request exemple
+
 * Json input request exemple for rout [/api/sort]:
 * Algorithm options: "mergesort", "heapsrot", "quicksort" and "all".
 
-{
+```json{
 	"Algorithm": "mergesort",
 	"Itens":
 		["15", "18", "16", "14","63", "12", "62", "58","66", "26", "6", "65","46", "11", "7"]
 }
-
+````
 * Your output should be:
 ```json[
    {
