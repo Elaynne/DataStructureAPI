@@ -50,7 +50,7 @@ This API uses the SortLib.dll from [DataStructurelib](https://github.com/Elaynne
    },
    {  
       "time":"00:00:00.0011829",
-      "complexity":"Ω(n log(n))\O(n²)",
+      "complexity":"Ω(n log(n))\tO(n²)",
       "items":[  
          6, 7, 11, 12,14, 15, 16, 18, 26, 46, 58, 62, 63, 65, 66
       ],
@@ -58,7 +58,7 @@ This API uses the SortLib.dll from [DataStructurelib](https://github.com/Elaynne
    },
    {  
       "time":"00:00:00.0022788",
-      "complexity":"Ω(n log(n))\O(n log(n))",
+      "complexity":"Ω(n log(n))\tO(n log(n))",
       "items":[  
          6, 7, 11, 12, 14, 15, 16, 18, 26, 46, 58, 62,63, 65, 66
       ],
