@@ -18,8 +18,8 @@ This API uses the SortLib.dll from [DataStructurelib](https://github.com/Elaynne
 
 ```json
 {
-	"Algorithm": "mergesort",
-	"Itens":
+	"algorithm": "mergesort",
+	"items":
 		["15", "18", "16", "14","63", "12", "62", "58","66", "26", "6", "65","46", "11", "7"]
 }
 ````
@@ -27,12 +27,12 @@ This API uses the SortLib.dll from [DataStructurelib](https://github.com/Elaynne
 ```json
 [
    {
-      "Time":"00:00:00.0096113",
-      "Complexity":"n log(n)",
-      "Itens":[
+      "time":"00:00:00.0096113",
+      "complexity":"n log(n)",
+      "items":[
          6,7,11,12,14,15,16,18,26,46,58,62,63,65,66
       ],
-      "Algorithm":"mergesort"
+      "algorithm":"mergesort"
    }
 ]
 ````
