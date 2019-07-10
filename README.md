@@ -43,23 +43,23 @@ This API uses the SortLib.dll from [DataStructurelib](https://github.com/Elaynne
    {  
       "time":"00:00:00.0032634",
       "complexity":"n log(n)",
-      "itens":[  
+      "items":[  
          6, 7, 11, 12, 14, 15, 16, 18, 26, 46, 58, 62, 63, 65, 66
       ],
       "algorithm":"mergesort"
    },
    {  
       "time":"00:00:00.0011829",
-      "complexity":"Ω(n log(n))\tO(n²)",
-      "itens":[  
+      "complexity":"Ω(n log(n))\O(n²)",
+      "items":[  
          6, 7, 11, 12,14, 15, 16, 18, 26, 46, 58, 62, 63, 65, 66
       ],
       "algorithm":"quicksort"
    },
    {  
       "time":"00:00:00.0022788",
-      "complexity":"Ω(n log(n))\tO(n log(n))",
-      "itens":[  
+      "complexity":"Ω(n log(n))\O(n log(n))",
+      "items":[  
          6, 7, 11, 12, 14, 15, 16, 18, 26, 46, 58, 62,63, 65, 66
       ],
       "algorithm":"heapsort"
