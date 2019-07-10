@@ -9,5 +9,7 @@
     <WebStackScaffolding_IsReferencingScriptLibrariesSelected>True</WebStackScaffolding_IsReferencingScriptLibrariesSelected>
     <WebStackScaffolding_LayoutPageFile />
     <WebStackScaffolding_IsAsyncSelected>False</WebStackScaffolding_IsAsyncSelected>
+    <ActiveDebugProfile>Docker</ActiveDebugProfile>
+    <NameOfLastUsedPublishProfile>FolderProfile</NameOfLastUsedPublishProfile>
   </PropertyGroup>
 </Project>

@@ -27,7 +27,7 @@ namespace DataStructureAPI.Controllers
             return "value";
         }
 
-        // POST: api/Sort  heapsort, mergesort, quicksort, bubblesort
+        // POST: api/Sort  
         [HttpPost]
         public ActionResult Sort([FromBody] InputElements values)
         {
@@ -48,38 +48,76 @@ namespace DataStructureAPI.Controllers
                     case "mergesort":
                         MergeSort<int> mSort = new MergeSort<int>();
                         mSort.MergesortTime(result, 0, result.Length - 1);
-
                         data.Complexity = "n log(n)";
                         data.Time = mSort.MSlog;
                         data.Itens = result;
                         return Ok(JsonConvert.SerializeObject(data));
+
                     case "quicksort":
                         QuickSort<int> qSort = new QuickSort<int>();
-
                         qSort.QuickSortTime(result, 0, result.Length - 1);
                         data.Complexity = "Ω(n log(n))	O(n²)";
                         data.Time = qSort.QSLog;
                         data.Itens = result;
-
                         return Ok(JsonConvert.SerializeObject(data));
-                    case "bubblesort":
-                        break;
-                    case "heapsort":
 
+                    case "heapsort":
                         HeapSort<int, int> hSort = new HeapSort<int, int>();
                         int index = 0;
-
-                        foreach (Node<int, int> node in hSort.Heapsort(BuildNodeArray<int>(result)))
+                        var collection = hSort.Heapsort(BuildNodeArray<int>(result));
+                        foreach (Node<int, int> node in collection)
                         {
                             result[index] = node.Key;
                             index++;
                         }
+
                         data.Complexity = "Ω(n log(n))	O(n log(n))";
                         data.Time = hSort.HSlog;
                         data.Itens = result;
                         return Ok(JsonConvert.SerializeObject(data));
+
                     case "all":
-                        break;
+                        List<OutSorted> resultlist = new List<OutSorted>();
+
+                        int[] mergedata = result;
+                        MergeSort<int> mergeSort = new MergeSort<int>();
+                        mergeSort.MergesortTime(mergedata, 0, mergedata.Length - 1);
+                        resultlist.Add(new OutSorted()
+                        {
+                            Complexity = "n log(n)",
+                            Time = mergeSort.MSlog,
+                            Itens = mergedata,
+                            Algorithm = "mergesort"
+                        });
+
+                        int[] quickdata = result;
+                        QuickSort<int> quickSort = new QuickSort<int>();
+                        quickSort.QuickSortTime(quickdata, 0, quickdata.Length - 1);
+                        resultlist.Add(new OutSorted() {
+                            Complexity = "Ω(n log(n))	O(n²)",
+                            Time = quickSort.QSLog,
+                            Itens = quickdata,
+                            Algorithm = "quicksort"
+                        });
+
+                        HeapSort<int, int> heapSort = new HeapSort<int, int>();
+                        int idx = 0; int[] heapdata = result;
+                        var nodes = heapSort.Heapsort(BuildNodeArray<int>(heapdata));
+                        foreach (Node<int, int> node in nodes)
+                        {
+                            heapdata[idx] = node.Key;
+                            idx++;
+                        }
+                        resultlist.Add(new OutSorted()
+                        {
+                            Complexity = "Ω(n log(n))	O(n log(n))",
+                            Time = heapSort.HSlog,
+                            Itens = data.Itens = heapdata,
+                            Algorithm = "heapsort"
+                        });
+
+                        return Ok(JsonConvert.SerializeObject(resultlist));
+
                     default:
                         return NotFound(values.Algorithm.ToLower());
                 }
