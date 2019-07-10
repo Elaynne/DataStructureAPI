@@ -36,8 +36,32 @@ This API uses the SortLib.dll from [DataStructurelib](https://github.com/Elaynne
    }
 ]
 ````
-* If you choose all, you'll get: 
+* If you choose algorithm: "all", you'll get: 
 
 ```json
-[{"Time":"00:00:00.0032634","Complexity":"n log(n)","Itens":[6,7,11,12,14,15,16,18,26,46,58,62,63,65,66],"Algorithm":"mergesort"},{"Time":"00:00:00.0011829","Complexity":"Ω(n log(n))\tO(n²)","Itens":[6,7,11,12,14,15,16,18,26,46,58,62,63,65,66],"Algorithm":"quicksort"},{"Time":"00:00:00.0022788","Complexity":"Ω(n log(n))\tO(n log(n))","Itens":[6,7,11,12,14,15,16,18,26,46,58,62,63,65,66],"Algorithm":"heapsort"}]
-````
+[  
+   {  
+      "time":"00:00:00.0032634",
+      "complexity":"n log(n)",
+      "itens":[  
+         6, 7, 11, 12, 14, 15, 16, 18, 26, 46, 58, 62, 63, 65, 66
+      ],
+      "algorithm":"mergesort"
+   },
+   {  
+      "time":"00:00:00.0011829",
+      "complexity":"Ω(n log(n))\tO(n²)",
+      "itens":[  
+         6, 7, 11, 12,14, 15, 16, 18, 26, 46, 58, 62, 63, 65, 66
+      ],
+      "algorithm":"quicksort"
+   },
+   {  
+      "time":"00:00:00.0022788",
+      "complexity":"Ω(n log(n))\tO(n log(n))",
+      "itens":[  
+         6, 7, 11, 12, 14, 15, 16, 18, 26, 46, 58, 62,63, 65, 66
+      ],
+      "algorithm":"heapsort"
+   }
+]````
