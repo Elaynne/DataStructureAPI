@@ -11,7 +11,7 @@ This API uses the SortLib.dll from [DataStructurelib](https://github.com/Elaynne
 * [ ] Accept text file as input
 * [ ] Allow download of ordered file
 
-## Request exemple
+## Request example
 
 * Json input request exemple for rout [/api/sort]:
 * Algorithm options: "mergesort", "heapsrot", "quicksort" and "all".
