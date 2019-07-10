@@ -40,7 +40,7 @@ namespace DataStructureAPI.Controllers
                 return BadRequest(ModelState);
             }
             OutSorted data = new OutSorted();
-            int[] result = values.Itens;
+            int[] result = values.Items;
             if (!string.IsNullOrEmpty(values.Algorithm))
             {
                 switch (values.Algorithm.ToLower())
@@ -50,7 +50,7 @@ namespace DataStructureAPI.Controllers
                         mSort.MergesortTime(result, 0, result.Length - 1);
                         data.Complexity = "n log(n)";
                         data.Time = mSort.MSlog;
-                        data.Itens = result;
+                        data.Items = result;
                         return Ok(JsonConvert.SerializeObject(data));
 
                     case "quicksort":
@@ -58,7 +58,7 @@ namespace DataStructureAPI.Controllers
                         qSort.QuickSortTime(result, 0, result.Length - 1);
                         data.Complexity = "Ω(n log(n))	O(n²)";
                         data.Time = qSort.QSLog;
-                        data.Itens = result;
+                        data.Items = result;
                         return Ok(JsonConvert.SerializeObject(data));
 
                     case "heapsort":
@@ -73,7 +73,7 @@ namespace DataStructureAPI.Controllers
 
                         data.Complexity = "Ω(n log(n))	O(n log(n))";
                         data.Time = hSort.HSlog;
-                        data.Itens = result;
+                        data.Items = result;
                         return Ok(JsonConvert.SerializeObject(data));
 
                     case "all":
@@ -86,7 +86,7 @@ namespace DataStructureAPI.Controllers
                         {
                             Complexity = "n log(n)",
                             Time = mergeSort.MSlog,
-                            Itens = mergedata,
+                            Items = mergedata,
                             Algorithm = "mergesort"
                         });
 
@@ -96,7 +96,7 @@ namespace DataStructureAPI.Controllers
                         resultlist.Add(new OutSorted() {
                             Complexity = "Ω(n log(n))	O(n²)",
                             Time = quickSort.QSLog,
-                            Itens = quickdata,
+                            Items = quickdata,
                             Algorithm = "quicksort"
                         });
 
@@ -112,7 +112,7 @@ namespace DataStructureAPI.Controllers
                         {
                             Complexity = "Ω(n log(n))	O(n log(n))",
                             Time = heapSort.HSlog,
-                            Itens = data.Itens = heapdata,
+                            Items = heapdata,
                             Algorithm = "heapsort"
                         });
 
